@@ -2,9 +2,23 @@
 /*Sets the width of the overall page container div
 to 90% of viewport width and margin:auto centers the page
 in the middle of the browser no matter how wide you stretch the browser*/
+body {
+background-image: linear-gradient(#FCA43D, #F59CA0);
+font-family: courier new;
+}
+
+img {
+width: auto;
+max-width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
 .pagecontainer {
   margin: auto;
   width: 90vw;
+  background-color: #A3E4E6
 }
 
 .center {
@@ -16,14 +30,21 @@ in the middle of the browser no matter how wide you stretch the browser*/
 }
 
 header {
-  background: #a2d492;
-  background-image: url("https://as2.ftcdn.net/jpg/01/55/59/49/500_F_155594935_Hep8zHTJ2fomfb4F6QkR3feoO1byDipK.jpg");
+  background: #82CCCD;
+  background-image: url("images/header.png");
+  height:100%;
+  background-size: 100%;
+  margin-left:auto;
+  margin-right:auto;
   background-position: center;
-  background-size: 90%;
-  
   background-repeat: no-repeat;
   padding: 2rem;
   text-align: center;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 4px black;
 }
 /*Unordered list in the navbar is set to display flex with wrapping
 so at smaller size-mobile width--it wraps vertically in a row
@@ -31,44 +52,67 @@ and at larger screen widths it spreads more horizontally.
 And justify-content centers flex blox content*/
 nav ul {
   display: flex;
+  list-style-type: none;
   flex-wrap: wrap;
   justify-content: center;
-  list-style-type: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 /*Sets background color of nav list elements and their width and height*/
 nav ul li {
-  background: #11b840;
+  background: #FFFFFF;
   height: 2rem;
   width: 36rem;
-  padding-top: 1rem;
-  border-color: black;
-  border: solid;
+  padding-top: .5rem;
+  border: dotted;
   border-width: 1px;
+  border-color: #F37076;
   text-align: center;
 }
 /*Takes away the default underlining of links and sets color of menu font*/
 nav ul li a {
   text-decoration: none;
   font-size: 1.2em;
-  color: #e7d067;
+  color: #5B8787;
+  font-style: normal;
 }
 /*Active psuedoclass is used so When you click on a menu item it turns orange.*/
 nav ul li:active {
-  background: #e9892f;
+  background: #F37076;
 }
 /*This class should be applied to html differently on each page to let user know
 which page you are on--in this case the home page*/
 .locationmarker {
-  background: #4b8552;
+  font-weight: bold;
 }
 
 article {
+  color: black;
+  font-size: 10pt;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+
+a {
+    color: #FFA600;
+    font-style: italic;
+}
+
+article h2 {
+background-color: white;
+border-color: #CD3738;
+border-style: solid;
+border-width: 4px;
+padding:.5rem;
 }
 
 footer {
-  background: #a2d492;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: .2rem;
+  background-image: linear-gradient(#82CCCD 10%, white);
   padding: 2rem;
   text-align: center;
 }
