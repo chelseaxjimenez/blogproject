@@ -51,7 +51,7 @@ so at smaller size-mobile width--it wraps vertically in a row
 and at larger screen widths it spreads more horizontally.
 And justify-content centers flex blox content*/
 nav ul {
-  display: flex;
+  display: block;
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: center;
