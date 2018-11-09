@@ -79,7 +79,7 @@ nav ul li a {
 }
 /*Active psuedoclass is used so When you click on a menu item it turns orange.*/
 nav ul li:active {
-  background: #F37076;
+  background: #f37078;
 }
 /*This class should be applied to html differently on each page to let user know
 which page you are on--in this case the home page*/
